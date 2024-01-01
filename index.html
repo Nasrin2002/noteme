@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noteme</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Hedvig+Letters+Serif:opsz@12..24&family=Nova+Square&family=Open+Sans:ital,wght@0,400;0,800;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+    <div class="navbar">
+        <h1>NoteMe</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Nila birthday</h2>
+            <h4>22-11-2004</h4>
+            <h4>chennai</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum, fugit nobis error illum numquam officiis esse optio quisquam autem ipsa nemo voluptate ex laboriosam molestiae praesentium magnam id veniam eligendi adipisci. Quibusdam consectetur molestias cumque quod quidem reprehenderit debitis dicta dolores, ab eum labore rem ea ipsa! Nisi, vitae.</p>
+            <button onclick="deletememory(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Memory</h2>
+        <form>
+            <input type="text" placeholder="Memory title" id="memory-title-input">
+            <input type="text" placeholder="Memory date" id="memory-date-input">
+            <input type="text" placeholder="Memory place" id="memory-place-input">
+            <textarea placeholder="Short Description" id="memory-Description-input"></textarea>
+            <button id="add-mem">ADD</button>
+            <button >CLEAR</button>
+            <button id="cancel-popup">CANCEL</button>
+            
+        </form>
+    </div>
+    <button class="add-button" id="add-popup">+</button>
+    
+    <script src="./noteme.js"></script>
+</body>
+</html>
